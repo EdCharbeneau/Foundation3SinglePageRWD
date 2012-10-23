@@ -40,6 +40,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NLipsum.Core">
+      <HintPath>..\packages\Prototyping_MVC.1.1\lib\NLipsum.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Prototyping.Ipsum">
+      <HintPath>..\packages\Prototyping_MVC.1.1\lib\Prototyping.Ipsum.dll</HintPath>
+    </Reference>
+    <Reference Include="Prototyping.Placeholdit">
+      <HintPath>..\packages\Prototyping_MVC.1.1\lib\Prototyping.Placeholdit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -140,9 +149,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Foundation_readme.txt" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="humans.txt" />
+    <Content Include="Ipsum_examples.txt" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\foundation\app.js" />
     <Content Include="Scripts\foundation\foundation.min.js" />
@@ -174,7 +183,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_Foundation.cshtml" />
-    <Content Include="Views\Home\Foundation_Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
