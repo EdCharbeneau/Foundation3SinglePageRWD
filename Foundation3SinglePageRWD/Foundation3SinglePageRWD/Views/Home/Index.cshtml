@@ -6,7 +6,7 @@
     <div class="row">
         <div class="six columns">@Html.Ipsum().h1().h4(wordCount: 8)
             <p class="action">
-                <a href="#" class="nice large orange button">Buy Now</a>
+                <a href="#" class="nice large blue button">Buy Now</a>
             </p>
         </div>
         <div class="six columns">
@@ -19,5 +19,18 @@
         <div class="four columns">@Html.Ipsum().h3() @Html.Placehold(width: 300, height: 200, text: "A")</div>
         <div class="four columns">@Html.Ipsum().h3() @Html.Placehold(width: 300, height: 200, text: "B")</div>
         <div class="four columns">@Html.Ipsum().h3() @Html.Placehold(width: 300, height: 200, text: "C")</div>
+    </div>
+</div>
+<div id="benefits">
+    <div class="row">
+        <div class="eight columns">
+            @Html.Ipsum().h3().p().h4().p().h4().p()
+        </div>
+        <div class="four columns">
+            @Html.Ipsum().h3().p(paragraphCount: 1, sentenceCount: 3)
+            <p>
+                <a href="#" class="nice blue button">Buy Now</a>
+            </p>
+        </div>
     </div>
 </div>
