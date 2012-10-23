@@ -12,6 +12,9 @@ namespace Foundation3SinglePageRWD
                         "~/Scripts/jquery-{version}.js"));
 
             #region Foundation Bundles
+            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+                       "~/Scripts/foundation/modernizr.foundation.js.*"));
+
             bundles.Add(new StyleBundle("~/Content/foundation/css").Include(
                        "~/Content/foundation/foundation.css",
                        "~/Content/foundation/app.css"));
