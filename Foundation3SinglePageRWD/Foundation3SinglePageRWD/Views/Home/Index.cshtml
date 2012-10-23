@@ -1,1 +1,16 @@
-﻿
+﻿@*The prototyping helper allows us to build fast demo code*@
+@using Prototyping.Ipsum
+@using Prototyping.Placeholdit
+@*Begin showcase*@
+<div id="showcase">
+    <div class="row">
+        <div class="six columns">@Html.Ipsum().h1().h4(wordCount: 8)
+            <p class="action">
+                <a href="#" class="nice large orange button">Buy Now</a>
+            </p>
+        </div>
+        <div class="six columns">
+                @Html.Placehold(width: 468, height: 304, text: "product slide 1", backgroundColor:"A7D5F2")
+        </div>
+    </div>
+</div>
