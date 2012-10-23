@@ -125,9 +125,40 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\foundation\app.css" />
+    <Content Include="Content\foundation\foundation.css" />
+    <Content Include="Content\images\foundation\orbit\bullets.jpg" />
+    <Content Include="Content\images\foundation\orbit\left-arrow-small.png" />
+    <Content Include="Content\images\foundation\orbit\left-arrow.png" />
+    <Content Include="Content\images\foundation\orbit\loading.gif" />
+    <Content Include="Content\images\foundation\orbit\mask-black.png" />
+    <Content Include="Content\images\foundation\orbit\pause-black.png" />
+    <Content Include="Content\images\foundation\orbit\right-arrow-small.png" />
+    <Content Include="Content\images\foundation\orbit\right-arrow.png" />
+    <Content Include="Content\images\foundation\orbit\rotator-black.png" />
+    <Content Include="Content\images\foundation\orbit\timer-black.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Foundation_readme.txt" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="humans.txt" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\foundation\app.js" />
+    <Content Include="Scripts\foundation\foundation.min.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.accordion.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.alerts.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.buttons.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.forms.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.mediaQueryToggle.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.navigation.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.orbit.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.reveal.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.tabs.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.tooltips.js" />
+    <Content Include="Scripts\foundation\jquery.foundation.topbar.js" />
+    <Content Include="Scripts\foundation\jquery.placeholder.js" />
+    <Content Include="Scripts\foundation\modernizr.foundation.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -142,6 +173,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_Foundation.cshtml" />
+    <Content Include="Views\Home\Foundation_Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
