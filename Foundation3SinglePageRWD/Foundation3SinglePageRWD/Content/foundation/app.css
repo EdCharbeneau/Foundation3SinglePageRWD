@@ -90,3 +90,56 @@ a:hover
 {
     color: #E6340E;
 }
+/* -----------------------------------------
+::Override navbar style
+   Using CSS overrides we can customize the nav bar
+----------------------------------------- */
+.nav-bar
+{
+    float: right;
+    background-color: transparent;
+    border: 0;
+    margin-top: -20px;
+}
+
+.nav-bar > li
+{
+    border: 0;
+    background-color: #1F1F1F;
+}
+    .nav-bar > li > a {
+        color:#FD651C;
+    }
+        .nav-bar > li > a:hover {
+        color:#E6340E;
+    }
+
+
+.nav-bar > li:first-child
+{
+    border-bottom-left-radius: 10px;
+}
+
+.nav-bar > li:last-child
+{
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .nav-bar
+    {
+        float: none;
+        margin: 20px -20px;
+    }
+
+    .nav-bar > li:first-child
+    {
+        border-bottom-left-radius: 0;
+    }
+
+    .nav-bar > li:last-child
+    {
+        border-bottom-right-radius: 0;
+    }
+}
