@@ -59,7 +59,34 @@ h1, h2, h3, h4, h5, h6
     background: #1f1f1f; /*fallback*/
     background: rgba(0, 0, 0, 0.60);
 }
+    #siteFooter ul li {
+       list-style: none;
+       margin-bottom:12px;
+    }
 #copyright p
 {
     text-align: center;
+}
+/* -----------------------------------------
+::Custom button style
+   Creating a custom button style is easy thanks to CSS overrides
+----------------------------------------- */
+.orange.button
+{
+    background-color: #FD651C;
+    border: 1px solid #1f1f1f;
+}
+
+.orange.button:hover, .orange.button:focus
+{
+    background-color: #E6340E;
+}
+/* style anchors to match */
+a
+{
+    color: #FD651C;
+}
+a:hover
+{
+    color: #E6340E;
 }
