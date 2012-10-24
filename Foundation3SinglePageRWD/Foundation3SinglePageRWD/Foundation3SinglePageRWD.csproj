@@ -147,6 +147,7 @@
     <Content Include="Content\images\foundation\orbit\right-arrow.png" />
     <Content Include="Content\images\foundation\orbit\rotator-black.png" />
     <Content Include="Content\images\foundation\orbit\timer-black.png" />
+    <Content Include="Content\images\irongrip.png" />
     <Content Include="favicon.ico" />
     <Content Include="Foundation_readme.txt" />
     <Content Include="Global.asax" />

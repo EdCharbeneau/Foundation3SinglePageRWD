@@ -4,8 +4,7 @@
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
-:: Page Name 1
-:: Page Name 2
+
 */
 
 
@@ -13,17 +12,54 @@
    Shared Styles
 ----------------------------------------- */
 
+body
+{
+    /*background pattern attrib: http://subtlepatterns.com/?p=944 */
+    background: url('../images/irongrip.png');
+}
+h1, h2, h3, h4, h5, h6
+{
+    color: #0CA0C6;
+}
+#siteHeader
+{
+    padding-top: 20px;
+    background: #fff;
+    border-top: 3px solid #1f1f1f;
+}
+#showcase, #features, #benefits, #media
+{
+    padding: 2em 20px;
+}
 
+#showcase
+{
+    background: #003366;
+    background: rgba(0, 96, 168, 0.4);
+}
+#showcase .action
+{
+    text-align: center;
+    margin-top: 4em;
+}
+#showcase h1, #showcase h4
+{
+    color: #ddd;
+}
 
-/* -----------------------------------------
-   Page Name 1
------------------------------------------ */
+#siteHeader, #features, #benefits
+{
+    background: #DDD; /*fallback*/
+    background: rgba(255, 255, 255, 0.88);
+}
 
-
-
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
-
+#siteFooter, #copyright
+{
+    padding: 20px;
+    background: #1f1f1f; /*fallback*/
+    background: rgba(0, 0, 0, 0.60);
+}
+#copyright p
+{
+    text-align: center;
+}
