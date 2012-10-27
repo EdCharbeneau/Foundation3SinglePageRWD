@@ -1,74 +1,264 @@
 <!DOCTYPE html>
-<html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Foundation3singlepagerwd : A single page responsive website built using Foundation 3 and ASP.NET MVC" />
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>Foundation Single Page RWD Demo</title>
+    <link href="./favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <title>Foundation3singlepagerwd</title>
-  </head>
+    <link href="./stylesheets/foundation.css" rel="stylesheet" />
+    <link href="./stylesheets/app.css" rel="stylesheet" />
 
-  <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/EdCharbeneau/Foundation3SinglePageRWD">View on GitHub</a>
-
-          <h1 id="project_title">Foundation3singlepagerwd</h1>
-          <h2 id="project_tagline">A single page responsive website built using Foundation 3 and ASP.NET MVC</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/EdCharbeneau/Foundation3SinglePageRWD/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/EdCharbeneau/Foundation3SinglePageRWD/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <script src="./javascripts/foundation/modernizr.foundation.js"></script>
+</head>
+<body>
+    <div id="siteHeader">
+        <div class="row">
+            <div class="four columns">
+                <h3>
+                    Foundation Single Page RWD</h3>
+            </div>
+            <div class="eight columns">
+                <ul class="nav-bar">
+                    <li><a href="#showcase" class="main">Home</a></li>
+                    <li><a href="#features" class="main">Features</a></li>
+                    <li><a href="#benefits" class="main">Benefits</a></li>
+                    <li><a href="#media" class="main">Media</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div id="showcase">
+        <div class="row">
+            <div class="six columns">
+                <h1>
+                    Built with .NET MVC</h1>
+                <h4>
+                    Prototyped and built using ASP.NET MVC and Foudation by Zurb</h4>
+                <p class="action">
+                    <a href="https://github.com/EdCharbeneau/Foundation3SinglePageRWD/zipball/master"
+                        class="nice large orange button">Download (.Zip)</a><br />
+                </p>
+            </div>
+            <div class="six columns">
+                <div id="rotator">
+                    <img src="./images/simple-talk-rwd-article.JPG" alt="Read the article on Simple-Talk.com"
+                        data-caption="#articleCaption" />
+                    <img src="./images/git-hub.jpg" alt="Download this demo on GitHub" data-caption="#aspCaption" />
+                    <img src="./images/foundation.jpg" alt="Built using Foundaiton" data-caption="#zurbCaption" />
+                </div>
+                <span id="articleCaption" class="orbit-caption">Read the article on <a href="http://www.simple-talk.com/dotnet/asp.net/responsive-design-using-foundation-with-asp.net-mvc/">
+                    Simple-Talk.com</a></span> <span id="aspCaption" class="orbit-caption">Code available
+                        on <a href="http://github.com/EdCharbeneau/Foundation3SinglePageRWD">GitHub</a></span>
+                <span id="zurbCaption" class="orbit-caption">Built using <a href="http://foundation.zurb.com/docs/">
+                    Foundation 3.2</a></span>
+            </div>
+        </div>
+    </div>
+    <div id="features">
+        <div class="row">
+            <div class="four columns">
+                <h5>
+                    The grid</h5>
+                <p>
+                    The Grid lets you lay out pages quickly and logically with a flexible, nestable
+                    system. Even better, the Grid can be whatever size you need — it's easily adapted
+                    to any size screens, from phones to TVs.</p>
+            </div>
+            <div class="four columns">
+                <h5>
+                    Rapid Prototyping</h5>
+                <p>
+                    Foundation includes dozens of styles and elements to help you quickly put together
+                    clickable prototypes, that can then be adapted and styled into polished production
+                    code. Forms, buttons, tabs, all kinds of good stuff.</p>
+            </div>
+            <div class="four columns">
+                <h5>
+                    Multidevice Mobility</h5>
+                <p>
+                    The Grid lets you quickly put together page layouts for mobile devices and the desktop.
+                    You don't need two different sites — the Grid is built to create a rock-solid experience
+                    on all kinds of devices with the exact same markup.</p>
+            </div>
+        </div>
+    </div>
+    <div id="benefits">
+        <div class="row">
+            <div class="eight columns">
+                <h3>
+                    Learn</h3>
+                <p>
+                    Responsive design isn't just a fad, it's a skill for developing the next generation
+                    of muiti-device applications and websites. Get a jumpstart on responsive design
+                    by learning one of the most comprehensive HTML/CSS frameworks available.<br />
+                    <a href="http://www.simple-talk.com/dotnet/asp.net/responsive-design-using-foundation-with-asp.net-mvc/">
+                        Learn to build this website site →</a></p>
+                <h3>
+                    Step by step</h3>
+                <p>
+                    The article "Responsive design using Foundation with ASP.Net MVC" takes you through
+                    the step by step process of using ASP.Net MVC and Foundation (HTML/CSS framwork)
+                    to build a responsive website. Follow along with the tutorial, download the complete
+                    project or <a href="https://github.com/EdCharbeneau/Foundation3SinglePageRWD/commits/master">
+                        read through the commits on GitHub.</a>
+                </p>
+                <h3>
+                    Leverage your platform</h3>
+                <p>
+                    Foundation is built for the web and becuase it's pure HTML, CSS and JavaScript it
+                    has easily been ported to .NET MVC. Start a responsive design project in just 30
+                    seconds using the ASP.NET MVC NuGet package.</p>
+                <h4>
+                    Open Source</h4>
+                <p>
+                    The amazing team at <a href="http://zurb.com">Zurb</a> who created <a href="http://foundation.zurb.com/docs/">
+                        Foundation</a> have licensed Foundation under the MIT license. Foundation is
+                    also available as an open source project on GitHub.</p>
+            </div>
+            <div class="four columns">
+                <h3>
+                    Demo code</h3>
+                <p>
+                    Avaiable on GitHub:</p>
+                <a href="#" class="nice orange button">Download (.Zip)</a> </p>
+                <ul>
+                    <li><a href="https://github.com/EdCharbeneau/Foundation3SinglePageRWD">View the source</a></li>
+                    <li><a href="github-windows://openRepo/https://github.com/EdCharbeneau/Foundation3SinglePageRWD">
+                        Clone on Windows</a></li>
+                    <li><a href="http://www.nuget.org/packages/Foundation3_MVC4">Install on NuGet</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="media">
+        <div class="row">
+            <div class="twelve columns">
+                <h3>
+                    Media</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="six columns">
+                <h4>
+                    A Crash Course in responsive design</h4>
+                <div id="__ss_12007229" class="flex-video">
+                    <strong style="display: block; margin: 12px 0 4px"><a href="http://www.slideshare.net/edcharbeneauii/a-crash-course-in-responsive-design-12007229"
+                        title="A crash course in responsive design" target="_blank">A crash course in responsive
+                        design</a></strong>
+                    <iframe src="http://www.slideshare.net/slideshow/embed_code/12007229" width="auto"
+                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: 1px solid #CCC;
+                        border-width: 1px 1px 0" allowfullscreen></iframe>
+                    <div style="padding: 5px 0 12px">
+                        View more PowerPoint from <a href="http://www.slideshare.net/edcharbeneauii" target="_blank">
+                            Ed Charbeneau II</a>
+                    </div>
+                </div>
+            </div>
+            <div class="six columns">
+                <h4>
+                    Don&#39;t be a stereotype: Rapid Prototype</h4>
+                <div class="flex-video">
+                    <strong style="display: block; margin: 12px 0 4px"><a href="http://www.slideshare.net/edcharbeneauii/a-crash-course-in-responsive-design-12007229"
+                        title="A crash course in responsive design" target="_blank">Don&#39;t be a stereotype:
+                        Rapid Prototype</a></strong>
+                    <iframe src="http://www.slideshare.net/slideshow/embed_code/13983405" width="auto"
+                        frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border: 1px solid #CCC;
+                        border-width: 1px 1px 0" allowfullscreen></iframe>
+                    <div style="padding: 5px 0 12px">
+                        View more PowerPoint from <a href="http://www.slideshare.net/edcharbeneauii" target="_blank">
+                            Ed Charbeneau II</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Foundation3singlepagerwd maintained by <a href="https://github.com/EdCharbeneau">EdCharbeneau</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div id="siteFooter">
+        <div class="row">
+            <div class="six columns push-six">
+                <h3>
+                    Additional Resources</h3>
+                <h6>
+                    Links</h6>
+                <ul>
+                    <li><a href="http://www.simple-talk.com/dotnet/asp.net/responsive-design-using-foundation-with-asp.net-mvc/">
+                        Article: Responsive design using Foundation with ASP.Net MVC</a></li>
+                    <li><a href="http://www.simple-talk.com/dotnet/asp.net/rapid-prototyping,-the-mvc-working-model/">
+                        Article: Rapid Prototyping, the MVC Working Model</a></li>
+                    <li><a href="http://www.nuget.org/packages/Foundation3_MVC4">Foundation NuGet Package</a></li>
+                    <li><a href="http://foundation.zurb.com/docs/">Official Foundation Docs</a></li>
+                    <li><a href="http://foundation.zurb.com/download.php">Official
+                        Foundation Download</a></li>
+                </ul>
+                <h6>
+                    Twitter</h6>
+                <ul>
+                    <li><a href="http://twitter.com/#!/edcharbeneau">Ed Charbeneau: @EdCharbeneau</a></li>
+                    <li><a href="http://twitter.com/#!/foundationzurb">Foundation @foundationzurb</a></li>
+                </ul>
+            </div>
+            <div class="six columns pull-six">
+                <h5>
+                    Menu</h5>
+                <ul>
+                    <li><a href="#showcase">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#media">Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="copyright" class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <p>
+                    This template is a demo of Foundation using ASP.NET MVC
+                </p>
+            </div>
+        </div>
     </div>
 
-    
 
-  </body>
+
+    <script src="./javascripts/jquery-1.8.2.min.js"></script>
+
+    <script src="./javascripts/foundation/jquery.foundation.accordion.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.alerts.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.buttons.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.forms.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.mediaQueryToggle.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.navigation.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.orbit.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.reveal.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.tabs.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.tooltips.js"></script>
+    <script src="./javascripts/foundation/jquery.foundation.topbar.js"></script>
+    <script src="./javascripts/foundation/jquery.placeholder.js"></script>
+    <script src="./javascripts/foundation/app.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#rotator').orbit(
+            { captions: true }
+            );
+        });
+    </script>
+
+</body>
 </html>

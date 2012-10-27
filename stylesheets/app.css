@@ -1,0 +1,152 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+body
+{
+    /*background pattern attrib: http://subtlepatterns.com/?p=944 */
+    background: url('../images/irongrip.png');
+}
+h1, h2, h3, h4, h5, h6
+{
+    color: #0CA0C6;
+}
+#siteHeader
+{
+    padding-top: 20px;
+    background: #fff;
+    border-top: 3px solid #1f1f1f;
+}
+#showcase, #features, #benefits, #media
+{
+    padding: 2em 20px;
+}
+
+#showcase
+{
+    background: #003366;
+    background: rgba(0, 96, 168, 0.4);
+}
+#showcase .action
+{
+    text-align: center;
+    margin-top: 4em;
+}
+#showcase h1, #showcase h4
+{
+    color: #ddd;
+}
+
+#siteHeader, #features, #benefits
+{
+    background: #DDD; /*fallback*/
+    background: rgba(255, 255, 255, 0.88);
+}
+
+#siteFooter, #copyright
+{
+    padding: 20px;
+    background: #1f1f1f; /*fallback*/
+    background: rgba(0, 0, 0, 0.60);
+}
+    #siteFooter ul li {
+       list-style: none;
+       margin-bottom:12px;
+    }
+#copyright p
+{
+    text-align: center;
+}
+/* -----------------------------------------
+::Custom button style
+   Creating a custom button style is easy thanks to CSS overrides
+----------------------------------------- */
+.orange.button
+{
+    background-color: #FD651C;
+    border: 1px solid #1f1f1f;
+}
+
+.orange.button:hover, .orange.button:focus
+{
+    background-color: #E6340E;
+}
+/* style anchors to match */
+a
+{
+    color: #FD651C;
+}
+a:hover
+{
+    color: #E6340E;
+}
+/* -----------------------------------------
+::Override navbar style
+   Using CSS overrides we can customize the nav bar
+----------------------------------------- */
+.nav-bar
+{
+    float: right;
+    background-color: transparent;
+    border: 0;
+    margin-top: -20px;
+}
+
+.nav-bar > li
+{
+    border: 0;
+    background-color: #1F1F1F;
+}
+    .nav-bar > li > a {
+        color:#FD651C;
+    }
+        .nav-bar > li > a:hover {
+        color:#E6340E;
+    }
+
+
+.nav-bar > li:first-child
+{
+    border-bottom-left-radius: 10px;
+}
+
+.nav-bar > li:last-child
+{
+    border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .nav-bar
+    {
+        float: none;
+        margin: 20px -20px;
+    }
+
+    .nav-bar > li:first-child
+    {
+        border-bottom-left-radius: 0;
+    }
+
+    .nav-bar > li:last-child
+    {
+        border-bottom-right-radius: 0;
+    }
+}
+/* -----------------------------------------
+::Override navbar style
+   Using CSS overrides we can customize the site width
+----------------------------------------- */
+.row {
+    width:980px;
+}
